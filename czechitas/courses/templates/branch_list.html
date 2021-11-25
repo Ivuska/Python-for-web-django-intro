@@ -1,0 +1,7 @@
+<ul>
+    {% for item in object_list %}
+    <li>
+        <a href="{% url 'branch_detail' item.pk %}">{{ item.city }} - {{ item.email }}</a>
+    </li>
+    {% endfor %}
+</ul>

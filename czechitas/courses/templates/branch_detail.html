@@ -1,0 +1,12 @@
+<h2>{{ object.name }}</h2>
+
+<h3>Kontakt</h3>
+<p>
+    {{ object.email }}
+</p>
+
+<ul>
+    {% for item in object.courses %}
+        <li> {{ item.name }}</li>
+    {% endfor %}
+</ul>

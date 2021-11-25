@@ -1,0 +1,22 @@
+{% load bootstrap4 %}
+
+<h2>{{ object.name }}</h2>
+<!-- Objekt ke kurzum nam tam dopravilo django, ja resim jen nazvy jednotlivych poli, ktere chci zobrazit,
+v tomto pripade je to nazev kurzu. -->
+
+<h3>Kdy</h3>
+<p>
+<!-- Diky te pipe se mi z data a casu v dtb vypise do frontendu jenom datum.-->
+    {{ object.start | date }}
+</p>
+<h3>Cena</h3>
+<p>
+    {{ object.price }} Kč
+</p>
+
+<p>
+    {{ object.description | safe}}
+</p>
+
+{% url 'application' object.pk as application_create %}
+{% bootstrap_button "Přihlásit se" href=target_url button_type="link" button_class="btn-info" %}

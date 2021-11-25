@@ -1,0 +1,8 @@
+Python pro web 
+- django-admin - prikaz na vytvareni novych projektu
+- courses slozka je volitelna, mohu si prejmenovat podle sebe - napr. menu
+- import do settings by pak vypadal: 'menu.apps.MenuConfig'
+- uvozovky nehraji roli
+- migrace je v kontextu pythonu a djanga je zmena struktury databaze (pridani radku, sloupecku apod. ne migrace dat)
+- heslo: dtbpythonproweb
+- docs.djangoprojects.com
